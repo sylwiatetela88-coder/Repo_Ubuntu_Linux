@@ -1,13 +1,26 @@
+# wyswietl wszystkie pliki w repozytorium
 ls
+#stworzenie katalogu test_katalog
 mkdir test_katalog
+#wejscie do katalogu test_katalog
 cd test_katalog
+#stworzenie trzech katalogow jedna komenda
 mkdir katalog1 katalog2 katalog3
+wyswietlam wszystkie katalogi 
 ls
+spisanie komend do pliku- wszystkich z historii
 history > historia.txt
+#katalog1 przerzucilam do linii glownej
 mv katalog1 ..
+#wyswietlilam wszystkie katalogi
 ls
+#usunelam katalog2
 rm -r katalog2
+#znowu wywietlilam katalogi
 ls
+#wyszlam z katalogu 
 cd ~
+#stworzylam plik Moje Katalogi ze spacja wpisujac jego nazwe w cudzyslowie
 mkdir " Moje Katalogi"
+#zaktualizowalam spis historii 
 history -w Ex_2
