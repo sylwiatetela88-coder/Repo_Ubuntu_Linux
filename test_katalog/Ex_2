@@ -1,0 +1,177 @@
+vi plik_vi.txt
+vi -c"set number" plik_vi.txt
+vi plik_vi.txt
+vi -c "set number" plik_vi.txt
+nano plik_nano.txt
+nano Ex_1
+nano ex_1
+nano Ex_1
+git init Repo_Ubuntu_Linux
+sudo apt install git
+git init Repo_Ubuntu_Linux
+sudo apt install git
+sudo apt update
+sudo apt install git
+ping google.com
+sudo apt update --fix-missing
+sudo apt upgrade
+sudo apt install git
+git init Repo_Ubuntu_Linux
+git add.
+git add .
+git config --global user.name "SylwiaTetelapd5211"
+git config user.email "sylwiatetela6@gmail.com"
+git config --global user.email "sylwiatetela6@gmail.com"
+cd ~/Repo_Ubunu_Linux
+git init
+git add .
+cd ~
+git add .
+pwd
+ls -l
+git init Repo_Ubuntu_Linux
+git add .
+cd Repo_Ubuntu_Linux
+ls
+ls -a
+rm -rf.git
+rm --help
+rm --rf.git
+rm -.  ..  .git
+rm .git
+ls -a
+rm .  ..  .git
+rm .  ..  .git"
+ls -a
+rm 
+ls -l .git
+rm -rf .git
+git add .
+ls -l
+git ini
+git init
+git add .
+ls -l
+ls-l
+ls -l
+ls -a
+git add Ex_1
+git add plik_vi.txt
+git init
+git add .
+ls -l
+ls -a
+pwd 
+ls -a
+git status
+cd Repo_Ubuntu_linux
+cd Repo_Ubuntu_Linux
+ls -l
+vim plik_vi.txt
+vi plik_vi.txt
+nano Ex
+mv Ex Ex_1
+vi plik_vi.txt
+nano Ex_1
+vi plik_vi.txt
+nano Ex_1
+nano plik_nano.txt
+nano Ex_1
+nano plik_nano.txt
+nano Ex_1
+mv Repo_Ubuntu_Linux 5211_pd_Linux
+git add .
+git status
+git remote add origin 
+git remote origin https://github.com/sylwiatetela88-coder/5211_pd_Linux
+git remote add origin https://github.com/sylwiatetela88-coder/5211_pd_Linux
+git remote -v
+git branch -M main
+git push -u origin main
+ping google
+git push
+git status
+git push -u origin main
+git remot -v
+git remote -v
+push
+git push -u origin main
+git fetch origin
+git merge origin/main
+git push origin main
+git push origin main 
+git push origin main
+git push origin main 
+git push origin main
+git remote -v
+git push origin main
+git push origin master
+git push origin main
+git push origin main 
+git push origin main
+git status
+git push origin main
+cd Repo_Ubuntu_Linux
+git push origin main
+rm ~/.git-credentials
+cd
+ping google
+git push -u origin main
+git branch
+cd Repo_Ubuntu_Linux
+git branch
+git pull origin main --allow-inre;ated-histories
+git pull origin main --allow-unrelated-histories
+git push origin main
+git config --global --unset credential.helper
+git credential-cache exit
+sudo rm -rf ~/.git-credential
+git remote -v
+git push -u origin main
+cd Repo_Ubuntu_Linux
+git status
+remote -v
+git push -u origin main
+git remote -v
+git push origin main
+git config --global credential.helper store
+git add .
+git push -u origin main
+git log --oneline
+git commit -m"Dodanie plikow"
+git push
+git branch -a
+cd
+pwd
+ls
+mkdir test_katalog
+cd test_katalog
+mkdir katalog1
+mkdir katalog2
+mkdir katalog3
+ls
+clear
+ls
+rm katalog1 katalog 2 katalog3
+rm -r katalog1
+rm -r katalog2
+rm -r katalog3
+ls
+clear
+mkdir katalog1 katalog2 katalog3
+ls
+history > historia.txt
+mv katalog1 ..
+ls
+rm -r karalog2
+rm -r katalog2
+ls
+cd ~
+mkdir Moje_Katalogi
+ls
+cd historia.txt
+cd test_katalog
+cd historia.txt
+rm -r Moje_Katalogi
+mkdir " Moje Katalogi"
+history -w Ex_2

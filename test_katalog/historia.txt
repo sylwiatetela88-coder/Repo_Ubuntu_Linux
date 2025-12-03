@@ -1,0 +1,163 @@
+    1  vi plik_vi.txt
+    2  vi -c"set number" plik_vi.txt
+    3  vi plik_vi.txt
+    4  vi -c "set number" plik_vi.txt
+    5  nano plik_nano.txt
+    6  nano Ex_1
+    7  nano ex_1
+    8  nano Ex_1
+    9  git init Repo_Ubuntu_Linux
+   10  sudo apt install git
+   11  git init Repo_Ubuntu_Linux
+   12  sudo apt install git
+   13  sudo apt update
+   14  sudo apt install git
+   15  ping google.com
+   16  sudo apt update --fix-missing
+   17  sudo apt upgrade
+   18  sudo apt install git
+   19  git init Repo_Ubuntu_Linux
+   20  git add.
+   21  git add .
+   22  git config --global user.name "SylwiaTetelapd5211"
+   23  git config user.email "sylwiatetela6@gmail.com"
+   24  git config --global user.email "sylwiatetela6@gmail.com"
+   25  cd ~/Repo_Ubunu_Linux
+   26  git init
+   27  git add .
+   28  cd ~
+   29  git add .
+   30  pwd
+   31  ls -l
+   32  git init Repo_Ubuntu_Linux
+   33  git add .
+   34  cd Repo_Ubuntu_Linux
+   35  ls
+   36  ls -a
+   37  rm -rf.git
+   38  rm --help
+   39  rm --rf.git
+   40  rm -.  ..  .git
+   41  rm .git
+   42  ls -a
+   43  rm .  ..  .git
+   44  rm .  ..  .git"
+   45  ls -a
+   46  rm 
+   47  ls -l .git
+   48  rm -rf .git
+   49  git add .
+   50  ls -l
+   51  git ini
+   52  git init
+   53  git add .
+   54  ls -l
+   55  ls-l
+   56  ls -l
+   57  ls -a
+   58  git add Ex_1
+   59  git add plik_vi.txt
+   60  git init
+   61  git add .
+   62  ls -l
+   63  ls -a
+   64  pwd 
+   65  ls -a
+   66  git status
+   67  cd Repo_Ubuntu_linux
+   68  cd Repo_Ubuntu_Linux
+   69  ls -l
+   70  vim plik_vi.txt
+   71  vi plik_vi.txt
+   72  nano Ex
+   73  mv Ex Ex_1
+   74  vi plik_vi.txt
+   75  nano Ex_1
+   76  vi plik_vi.txt
+   77  nano Ex_1
+   78  nano plik_nano.txt
+   79  nano Ex_1
+   80  nano plik_nano.txt
+   81  nano Ex_1
+   82  mv Repo_Ubuntu_Linux 5211_pd_Linux
+   83  git add .
+   84  git status
+   85  git remote add origin 
+   86  git remote origin https://github.com/sylwiatetela88-coder/5211_pd_Linux
+   87  git remote add origin https://github.com/sylwiatetela88-coder/5211_pd_Linux
+   88  git remote -v
+   89  git branch -M main
+   90  git push -u origin main
+   91  ping google
+   92  git push
+   93  git status
+   94  git push -u origin main
+   95  git remot -v
+   96  git remote -v
+   97  push
+   98  git push -u origin main
+   99  git fetch origin
+  100  git merge origin/main
+  101  git push origin main
+  102  git push origin main 
+  103  git push origin main
+  104  git push origin main 
+  105  git push origin main
+  106  git remote -v
+  107  git push origin main
+  108  git push origin master
+  109  git push origin main
+  110  git push origin main 
+  111  git push origin main
+  112  git status
+  113  git push origin main
+  114  cd Repo_Ubuntu_Linux
+  115  git push origin main
+  116  rm ~/.git-credentials
+  117  cd
+  118  ping google
+  119  git push -u origin main
+  120  git branch
+  121  cd Repo_Ubuntu_Linux
+  122  git branch
+  123  git pull origin main --allow-inre;ated-histories
+  124  git pull origin main --allow-unrelated-histories
+  125  git push origin main
+  126  git config --global --unset credential.helper
+  127  git credential-cache exit
+  128  sudo rm -rf ~/.git-credential
+  129  git remote -v
+  130  git push -u origin main
+  131  cd Repo_Ubuntu_Linux
+  132  git status
+  133  remote -v
+  134  git push -u origin main
+  135  git remote -v
+  136  git push origin main
+  137  git config --global credential.helper store
+  138  git add .
+  139  git push -u origin main
+  140  git log --oneline
+  141  git commit -m"Dodanie plikow"
+  142  git push
+  143  git branch -a
+  144  cd
+  145  pwd
+  146  ls
+  147  mkdir test_katalog
+  148  cd test_katalog
+  149  mkdir katalog1
+  150  mkdir katalog2
+  151  mkdir katalog3
+  152  ls
+  153  clear
+  154  ls
+  155  rm katalog1 katalog 2 katalog3
+  156  rm -r katalog1
+  157  rm -r katalog2
+  158  rm -r katalog3
+  159  ls
+  160  clear
+  161  mkdir katalog1 katalog2 katalog3
+  162  ls
+  163  history > historia.txt

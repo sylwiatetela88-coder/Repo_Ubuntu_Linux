@@ -1,0 +1,24 @@
+
+  246  cd Repo_Ubuntu_Linux
+  247  ls
+  248  touch notatki.txt
+  254  git add notatki.txt
+  255  git commit -m "Dodalam plik notatki.txt"
+  256  cd
+  257  cp -r /home/vboxuser/Repo_Ubuntu_Linux/notatki.txt /home/vboxuser/Repo_Ubuntu_Linux/test_katalog/katalog3
+  259  cd Repo_Ubuntu_Linux
+  260  cd test_katalog
+  261  cd katalog3
+  262  ls
+  263  cd ~
+  264  find . -name "notatki.txt"
+./Repo_Ubuntu_Linux/test_katalog/katalog3/notatki.txt
+./Repo_Ubuntu_Linux/notatki.txt
+  265  history > Ex_3.txt
+  266  cd Repo_Ubuntu_Linux
+  267  cd test_katalog
+  268  cd katalog3
+  269  cp notatki.txt kopia_notatki.txt
+  270  ls -l
+  271  ls -lS
+  272  ls

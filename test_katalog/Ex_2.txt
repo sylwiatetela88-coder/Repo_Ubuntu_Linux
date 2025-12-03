@@ -1,0 +1,13 @@
+ls
+mkdir test_katalog
+cd test_katalog
+mkdir katalog1 katalog2 katalog3
+ls
+history > historia.txt
+mv katalog1 ..
+ls
+rm -r katalog2
+ls
+cd ~
+mkdir " Moje Katalogi"
+history -w Ex_2
