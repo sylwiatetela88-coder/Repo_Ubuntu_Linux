@@ -1,0 +1,18 @@
+-Na poczatku utworzylam repozytorium specjalnie dla tego przedmiotu, 
+nastepnie dodalam plik w edytorze vim przy uzyciu komendy vi plik_vi.txt
+w ktorym wpisalam tekst oraz utworzyalm ten plik aby na biezaco zapisywac to co robie w zadaniu :)
+Nastepnie zapisalam i wyszlam komenda Ctrl+O i Ctrl+X, ponownie otworzyalam plik_vi.txt 
+Po otwrciu uzylam komendy :%s/Bioinformatyka to przyszlosc./Bioinformatyka zmienia swiat./
+Zastapilam ta komenda zdanie na nowe. ponownie zapisalam i wyszlam komenda :wq
+Weszlam ponownie do pliku i po ustawieniu sie w linii posiadajacej tekst zastosowalam "yy" aby skopiowac cala linie 
+Przenioslam sie za pomoca "G" na koniec pliku i wkleilam przy pomocy "p" skopiowany tekst
+zapisalam i wyszlam tradycyjnie :wq
+Przeszlam do tworzenia pliku plik_nano.txt poprzedzajac jego nazwe slowem "nano" 
+po wejsciu do edytora wpisalam tekst i zapisalam przy pomocy Ctr+O nastepnie wyszlam przy pomocy Ctrl+X
+Oczywiscie komende Ctrl+O zawsze trzeba zatwierdzic enterem
+Po zapisaniu i zamknieciu pliku otworzylam go ponownie ta sama komenda i tym razem musialam odnalezc w teksie slowo ktore chce zmieni
+Komenda Ctrl+W wyszukalam slowo tekstu, nastepnie przy pomocy komendy Ctrl+\ wpisalam slowo tekstu zatwierdzialam Enterem i pozniej wpisalam slowo kodu aby zastapilo poprzednie slowo
+pozniej zapisalam i zamknelam Ctrl+O enter Ctrl+X
+Niestety nie ma mozliwosci numerowania linijek w pliku nano tak jak w plikach vim
+mozna jedynie sprawdzic ile linijek i kolumn mamy w pliku komenda Ctrl+C 
+
