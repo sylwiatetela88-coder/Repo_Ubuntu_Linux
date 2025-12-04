@@ -1,0 +1,17 @@
+  cd "Moje katalogi"
+  echo "To jest zawartosc pliku" > plik.txt
+  ln plik.txt plik_twardy.txt
+  ls
+  mv plik.txt ~
+  ls
+  cd ~
+  ls
+  cd Repo_Ubuntu_Linux
+  cd "Moje katalogi"
+  cat plik_twardy.txt
+  cd ~
+  ln -s Repo_Ubuntu_Linux/plik.txt link_symboliczny.txt
+  ls
+  rm plik.txt
+  ls
+  cd link_symboliczny.txt
