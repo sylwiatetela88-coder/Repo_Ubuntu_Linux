@@ -1,24 +1,43 @@
-
-  246  cd Repo_Ubuntu_Linux
-  247  ls
-  248  touch notatki.txt
-  254  git add notatki.txt
-  255  git commit -m "Dodalam plik notatki.txt"
-  256  cd
-  257  cp -r /home/vboxuser/Repo_Ubuntu_Linux/notatki.txt /home/vboxuser/Repo_Ubuntu_Linux/test_katalog/katalog3
-  259  cd Repo_Ubuntu_Linux
-  260  cd test_katalog
-  261  cd katalog3
-  262  ls
-  263  cd ~
-  264  find . -name "notatki.txt"
+#Wejscie do repozytorium
+cd Repo_Ubuntu_Linux
+#Wylistowanie katalogw wewnatrz
+ls
+#Utworzenie pustego katalogu notatki.txt
+touch notatki.txt
+#dodaje notatki.txt do monitorowania
+git add notatki.txt
+#commituje zmiany
+git commit -m "Dodalam plik notatki.txt"
+#wyjscie z repozytorium
+cd
+#przeniesienie pliku notatki do katalogu 3
+cp -r /home/vboxuser/Repo_Ubuntu_Linux/notatki.txt /home/vboxuser/Repo_Ubuntu_Linux/test_katalog/katalog3
+#wejscie do repozytorium
+cd Repo_Ubuntu_Linux
+#wejscie do test_katalog
+cd test_katalog
+#wejscie katalog3
+cd katalog3
+#sprawdzenie czy wewnatrz jest nowo dodany plik
+ls
+#wyjscie na przestrzen glownego terminala
+cd ~
+#wyszukiwanie pliku po nazwie
+find . -name "notatki.txt"
+#wynik komendy
 ./Repo_Ubuntu_Linux/test_katalog/katalog3/notatki.txt
 ./Repo_Ubuntu_Linux/notatki.txt
-  265  history > Ex_3.txt
-  266  cd Repo_Ubuntu_Linux
-  267  cd test_katalog
-  268  cd katalog3
-  269  cp notatki.txt kopia_notatki.txt
-  270  ls -l
-  271  ls -lS
-  272  ls
+#wyeksportowanie historii komend do pliku Ex_3.txt
+history > Ex_3.txt
+#wejscie do miejsca gdzie jest plik wewnatrz repozytorium
+cd Repo_Ubuntu_Linux
+cd test_katalog
+cd katalog3
+#stworzenie kopii notatki.txt jedna komenda
+cp notatki.txt kopia_notatki.txt
+#sprawdzenie wszystkich katalogow w tym miejscu alfabetycznie 
+ls -la
+#sprwdzenie wszystkich katalogow wedlug rozmiarow plikow
+ls -lS
+#sprawdzenie dostepnych katalogow
+ls
