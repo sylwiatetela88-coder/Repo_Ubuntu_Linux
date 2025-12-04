@@ -1,0 +1,29 @@
+  #tworze nowy plik 
+   touch nowy plik_do_archiwizacji.txt
+  #tworze nowy katalog
+   mkdir Katalog_do_archiwizacji
+  #przenosze utworzony plik do utworzonego katalogu
+   cp plik_do_archiwizacji.txt Katalog_do_archiwizacji
+  #wchodze do katalogu
+   cd Katalog_do_archiwizacji
+  #wyswietlam jego zawartosc
+   ls
+  #przenioslam plik_do_archiwizacji do archiwum
+   tar -cvf archiwum.tar plik_do_archiwizacji.txt
+  #sprawdzilam komenda co wyswietli mi plik archiwum
+   tar
+  #sprawdzilam komenda tar co wyswietli mi sie po dokonaniu archiwizacji
+   tar -tvf archiwum.tar
+  #skompresowalam plik
+   gzip archiwum.tar
+  #sprawdzilam jak sie wyswietla teraz plik
+   tar -tvf archiwum.tar
+  #sprawdzialam pliki w katalogu
+   ls
+  #odpakowalam plik archiwum
+   gunzip archiwum.tar.gz
+  #sprawdzialam czy wszystko w porzadku po wypakowaniu, na szczescie tak 
+  #:)
+   ls
+  #sprawdzialam czy plik w archiwum wyswietli sie juz bez kompresji
+   tar -tvf archiwum.tar
