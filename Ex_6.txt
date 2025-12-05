@@ -1,0 +1,16 @@
+#utworzenie pliku sekencje_genowe z zawartoscia komenda echo 
+ echo -e ">GENE1\nATCGTACGTACGATCGATCGA\n>GENE2\nCGTACGATCAGCATCAGC\n>GEN>
+#sprawdzenie zawartosci pliku
+ nano ~/sekwencje_genowe.txt
+#wyswietlenie pliku w terminalu
+ cat ~/sekwencje_genowe.txt
+#wyszukiwanie wzorcow w pliku
+ grep "^>" ~/sekwencje_genowe.txt
+#znajduje wszystkie linie ktore nie zawieraja wzorca ATCG
+ grep -v "ATCG" ~/sekwencje_genowe.txt
+#znajduje wszystkie sekwencje zaczynajace sie od CGTACG
+ grep "^CGTACG" ~/sekwencje_genowe.txt
+#znajduje wszystkie linie ktore zawieraja liczby
+ grep -E "[0-9]" ~/sekwencje_genowe.txt
+#przeszukuje referencyjnie caly plik w poszukiwaniu wzorca ATG
+ grep -r "ATG" ~
