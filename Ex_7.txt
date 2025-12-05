@@ -1,0 +1,13 @@
+#utworzylam plik dane.txt i wraz ze wskazana w srodku trescia
+ echo "Bioinformatyka to interdyscyplinarna dziedzina nauki." > ~/dane.txt
+ echo "Bioinformatyka laczy informatyke i biologie" >> ~/dane.txt
+ echo "W bioinformatyce analiza danych biologicznych odgrywa kluczowa rol>
+ echo "To jest komentarz, ktory nie bedzie usuniety." >> ~/dane.txt
+#zmienia kazde wystapienie slowa Bioinformatyka na Informatyka
+ sed -i 's/Bioinformatyka/Informatyka/g' ~/dane.txt
+#usuwam  wszystkie linie zawierajace slowo komentarz
+ sed -i '/komentarz/d' ~/dane.txt
+#wyswietlam dane z linijek od 1 do 3 z pliku dane.txt
+ sed -n '1,3p' ~/dane.txt
+#zamienia w pliku wszystkie litery z a na e w pliku
+ sed -i 's/a/e/g' ~/dane.txt
