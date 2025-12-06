@@ -1,0 +1,32 @@
+#stworzenie pliku .sh
+ nano Ex_13.sh
+#stworzenie pliku dla notatek z tego zadania
+ nano Ex_13.txt
+#uruchomienie pliku 
+ chmod +x Ex_13.sh
+#tesc pliku .sh
+#!/bin/bash
+
+# Ustawienie zmiennych
+LOG_FILE=~/log.txt
+CURRENT_TIME=$(date +"%Y-%m-%d %H:%M:%S")
+
+# 1. Wyświetl komunikat powitalny z datą i godziną
+echo "Witaj! Aktualna data i godzina: $CURRENT_TIME"
+
+# 2. Sprawdzenie, czy plik log.txt istnieje
+if [ -f "$LOG_FILE" ]; then
+    # 3. Jeśli plik istnieje: dopisz komunikat (operator >>)
+    echo "Skrypt został uruchomiony wraz z aktualnym czasem: $CURRENT_TIME" >> "$LOG_FILE"
+    echo "Plik log.txt istniał. Komunikat został dopisany (>>)."
+else
+    # 3. Jeśli plik nie istnieje: utwórz go (operator >)
+    echo "Skrypt został uruchomiony wraz z aktualnym czasem: $CURRENT_TIME" > "$LOG_FILE"
+    echo "Plik log.txt nie istniał. Został utworzony (>)."
+fi
+
+# 4. Wyświetl komunikat końcowy
+echo "Skrypt zakończony pomyślnie."
+#sprawdzenie dzialania pliku 
+./Ex_13.sh
+
