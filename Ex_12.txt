@@ -1,0 +1,19 @@
+#tworzenie piku skryptu
+ nano moj_skrypt.sh
+#!/bin/bash
+
+#Wyswietla komunikat powitalny, koszystajac ze zmiennej systemowej $USER
+echo "Witaj w swiecie skryptow Bash!
+Uzytkowanik: $USER"
+
+#Wyswietla aktualna date i godzine 
+echo "Aktualna data i godzina:"
+date
+
+#Wyswietla komunikat koncowy
+echo "Skrypt zakonczony"
+
+#nadanie uprawnien do wykonania
+ chmod +x moj_skrypt.sh
+#uruchomienie skryptu
+ ./moj_skrypt.sh
