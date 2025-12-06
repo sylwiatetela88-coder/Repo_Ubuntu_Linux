@@ -1,0 +1,27 @@
+#utworzenie pliku dane_genetyczne.txt
+echo -e "probka1,DNA,150\nprobka2,RNA,200\nprobka3,DNA,300\nprobka4,DNA,180\nprobka5,RNA,250" > dane_genetyczne.txt
+#wpisanie nazwy probki i dlugosci sekwencji
+ awk -F, '{print "Nazwa: " $1 ", Dlugosc: " $3}' dane_genetyczne.txt
+Nazwa: probka1, Dlugosc: 150
+Nazwa: probka2, Dlugosc: 200
+Nazwa: probka3, Dlugosc: 300
+Nazwa: probka4, Dlugosc: 180
+Nazwa: probka5, Dlugosc: 250
+#obliczenie sredniej dlugosci sekwencji dla kazdego typu (DNA,RNA)
+awk -F, '
+{
+    # $2 to typ (DNA/RNA), $3 to długość
+    sum[$2] += $3;
+    count[$2]++;
+}
+END {
+    for (type in sum) {
+        if (count[type] > 0) {
+            average = sum[type] / count[type];
+            print "Średnia długość dla " type ": " average;
+        }
+    }
+}' dane_genetyczne.txt
+Średnia długość dla DNA: 210
+Średnia długość dla RNA: 225
+
