@@ -1,0 +1,26 @@
+#utworzenie pustego pliku tekstowego fasta
+touch example.fasta
+#tworzenie skryptu Ex_14.sh
+ nano Ex_14.sh
+#wpisuje skrypt do pliku
+#!/bin/bash
+echo "--- Lista plikow FASTA wraz z zajmowanym miejscem ---"
+
+#Uzycie petli for do iteracji po wszystkich plikach w biezacym katalogu
+#Wzorzec *.fasta wyszuka wszystkie pliki z tym rozszezrzeniem.
+for fasta_file in *.fasta; do
+        #Sprawdzimy, cz plik faktycznie istnieje.Jesli petla nie znajdzie zadne>
+        #Zmienna $fasta_file bedzie zawierac doslownie ciag "*.fasta", co trzeb>
+        if [ -f "$fasta_file" ]; then 
+        #Wpisanie nazwy pliku i jego rozmiaru (uzywajac ls -lh dla czytelnego f>
+        #cut sluzy do wyciecia nazwy pliku i rozmairu (kolumny 5 i 9 w standard>
+        ls -lh "$fasta_file" | awk '{print "Nazwa: " $9 ", Rozmiar: " $5}'
+        fi
+done
+
+echo "----------------------------------------------------"
+
+#uruchomienie pliku
+ chmod +x Ex_14.sh
+#sprawdzenie dzialania Ex_14.sh
+ ./Ex_14.sh
