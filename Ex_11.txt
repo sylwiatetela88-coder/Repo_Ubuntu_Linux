@@ -1,0 +1,8 @@
+#sprawdznie czy istnieje plik_tekstowy.txt
+ls plik_testowy.txt
+#warunkowe tworzenie i przejscie do katalog
+ mkdir nowy_katalog && cd nowy_katalog
+#niezalezne wykonywanie polecen 
+ echo "Witaj" ; ls
+#uruchomienie polecenia w tle
+ sleep 10 &
