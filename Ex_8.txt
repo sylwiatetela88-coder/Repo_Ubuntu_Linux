@@ -1,0 +1,10 @@
+#Utworzenie pliku przykladowe dane z wieloma liniami zapisane w jednej komendzie
+ echo -e "Kurs Bioinformatyka\nAnalizadanych\nProgramowanie w Pythonie\nW>
+#analiza pliku
+ cat ~/przykladowe_dane.txt
+##wyswietla 3 pierrwsze linie pliku
+ head -n 3 ~/przykladowe_dane.txt
+ #wyswietla ostatnie dwie niepuste linie pliku
+ grep -v '^$' ~/przykladowe_dane.txt | tail -n 2
+#zlicza liczbe linii, slow i znakow w pliku
+ wc ~/przykladowe_dane.txt
