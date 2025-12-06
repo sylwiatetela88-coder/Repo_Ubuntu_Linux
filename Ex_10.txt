@@ -1,0 +1,9 @@
+##dodanie pliku przykladowe dane3.txt z zawartoscia
+ echo -e "Biologia\nChemia\nFizyka\nMatematyka\n" > ~/przykladowe_dane3.txt
+#skompresowanie pliku za pomoca gzip
+ gzip ~/przykladowe_dane3.txt
+#wyswietlenie zawartosci pliku bez rozpakowywania
+ zcat ~/przykladowe_dane3.txt.gz
+#rozpakowanie skompresowanego pliku za pomoca gunzip
+ gunzip ~/przykladowe_dane3.txt.gz
+
