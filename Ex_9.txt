@@ -1,0 +1,8 @@
+#stworzylam plik przykladowe dane2.txt z zawartoscia
+echo -e "Ala\nKot\nAla\nPies\nAla\nPies\nZebra\nZebra\n" > ~/przykladowe_dane2.txt
+#sortowanie danych i zapisanie ich w pliku posortowane.txt
+ sort ~/przykladowe_dane2.txt > ~/posortowane_dane.txt
+#usuwnie duplikatow
+ uniq ~/posortowane_dane.txt
+#wyswitla zawartosc pliku
+ cat ~/posortowane_dane.txt
