@@ -1,0 +1,47 @@
+final_report.txt
+#1. Najpierw utworzylam katalog projektu
+mkdir projekt_bioinfo
+#2.Utworzylam  nowa grupe
+sudo groupadd bio_group
+#3. Przypisalam  uzytkownika do grupy
+sudo usermod -aG bio_group $USER
+#4. Zmienilam grupy katalogu projektu
+sudo chgrp bio_group projekt_bioinfo
+#5. Nadalam uprawnienia
+sudo chmod 770 projekt_bioinfo
+#6.Pobralam sekwencje FASTA dla czlowieka, swini,psa i kota
+wget -O INS_human.fasta "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=3630&db=gene&report=fasta"
+wget -O INS_pig.fasta "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=397415&db=gene&report=fasta"
+wget -O INS_dog.fasta "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=483665&db=gene&report=fasta"
+wget -O INS_cat.fasta "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=493804&db=gene&report=fasta"
+#7.Przenioslam pliki do katalogu projektu
+mv INS_*.fasta projekt_bioinfo/
+#8. Zmodyfikowalam  pliki FASTA
+sed -i '1s/.*/>INS_human/' INS_human.fasta
+sed -i '1s/.*/>INS_pig/' INS_pig.fasta
+sed -i '1s/.*/>INS_dog/' INS_dog.fasta
+sed -i '1s/.*/>INS_cat/' INS_cat.fasta
+#9.Polaczylam  wszystkie sekwencje w jeden plik
+cat INS_*.fasta > INSmultifasta.fa
+#10.Wyszukiwanie linii zawierajacych motyw
+grep "AGCT" INSmultifiesta.fa > motyw_AGCT.txt
+#11.Zliczenie liczby wystapien motywu
+grep -o "AGCT" INSmultifasta.fa | wc -l
+#12. Automatyzacja w skrypie sh
+#!/bin/bash
+wget -O seq.fasta "$1"
+sed i '1s/.*/>SEQ_SHORT/' seq.fasta
+grep "AGCT" sew.fasta > wynik_AGCT.txt
+liczba=$(grep -o "AGCT" seq.fasta | wc -l)
+
+echo "Zakonczono analize. Liczba wystapien AGCT:$liczba"
+#13 Nadalam uprawnienia
+chmod +x script.sh
+#14 Stworzylam dowiazanie symboliczne
+ln -s ~/projekt_bioinfo ~/prgfatt_pipin
+#15 Stworzylam powiazanie twarde 
+ln INS_human.fasta hard_INS_human.fasta
+#16.  Zarchiwizowalam plik
+tar -czvf projekt_bioinfo.tar.gz projekt_bioinfo
+#17.Sprobowalam transferowac to na serwer PJATKa
+scp -r ~/projekt_bioinfo sylwiatetela88-coder@msh.bmta.pjatk.edu:/home/PJWSTK/sylwiatetela88-coder
